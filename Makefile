@@ -8,6 +8,9 @@ start:
 stop:
 	docker container stop gpt-assistant
 
+nav:
+	docker exec -it gpt-assistant bash
+	
 logs:
 	docker logs gpt-assistant
 
