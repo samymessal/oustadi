@@ -14,4 +14,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 80
 
 # Run assistant.py when the container launches
-CMD ["python", "./assistant.py"]
+CMD ["tail", "-f", "/dev/null"]
+
