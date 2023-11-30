@@ -23,8 +23,8 @@ while msg != "exit":
       thread_id=thread_id,
       run_id=run.id
     )
-    time.sleep(1)
+    time.sleep(1) 
   thread_messages = client.beta.threads.messages.list(thread_id, order="desc", limit=2)
   for i in thread_messages.data:
     if i.role == 'assistant':
-      print(i.content[0].text.value, "\n")
+      print(i.content[0].text, "\n")
